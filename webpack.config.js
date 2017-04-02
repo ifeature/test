@@ -25,6 +25,9 @@ const config = applyConfig(NODE_ENV);
 
 config.context = path.resolve(__dirname, './src');
 config.output.path = path.resolve(__dirname, 'dist');
-config.devServer.contentBase = path.join(__dirname, 'dist'),
+
+if (NODE_ENV === ENV_DEVELOPMENT) {
+    config.devServer.contentBase = path.join(__dirname, 'dist');
+}
 
 module.exports = config;
