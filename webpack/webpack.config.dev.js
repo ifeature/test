@@ -38,7 +38,6 @@ const config = {
         ]
     },
     plugins: [
-        //new webpack.optimize.UglifyJsPlugin(), // prod only
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
