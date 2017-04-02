@@ -9,7 +9,7 @@ const config = {
     devtool: 'source-map',
     entry: {
         adminPage: './modules/AdminPage',
-        homePage: './modules/homePage',
+        homePage: './modules/HomePage',
         vendor: './vendor'
     },
     output: {
