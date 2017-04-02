@@ -2,11 +2,11 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const path = require('path');
 
-const NODE_ENV = process.env.NODE_ENV || 'development';
+const NODE_ENV = process.env.NODE_ENV || 'production';
 
 const config = {
     target: 'web',
-    devtool: 'cheap-inline-source-map',
+    devtool: 'source-map',
     entry: {
         adminPage: './modules/AdminPage',
         homePage: './modules/homePage',
@@ -39,7 +39,6 @@ const config = {
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.ProgressPlugin(),
