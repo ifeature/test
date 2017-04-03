@@ -1,5 +1,5 @@
   import test from 'ava';
 
-  test('Timer', t => {
+  test('Timer', (t) => {
     t.pass();
   });

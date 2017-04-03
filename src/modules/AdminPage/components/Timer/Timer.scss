@@ -1,0 +1,13 @@
+$default-color: tomato;
+
+.timer {
+  display: inline-flex;
+  font-family: sans-serif;
+  padding: 10px 15px;
+  color: $default-color;
+  background-image: url('./Timer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 45px;
+  background-position: 100% 0;
+}

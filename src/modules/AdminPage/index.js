@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import Timer from './components/Timer';
 
-_.defaults({ 'a': 1 }, { 'a': 3, 'b': 2 });
+_.defaults({ a: 1 }, { a: 3, b: 2 });
 
 const root = document.getElementById('root');
 
@@ -12,7 +12,7 @@ timer.render(root);
 timer.run();
 
 if (module.hot) {
-    module.hot.accept(err => {
-        console.error(err);
-    });
+  module.hot.accept((err) => {
+    document.appendChild(document.createTextNode(err));
+  });
 }
